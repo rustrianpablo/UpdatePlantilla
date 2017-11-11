@@ -1,0 +1,25 @@
+<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3">Pagina Control de Personas(Spring)</h1>
+</div>
+<div class="wrapper-md"
+     ng-controller="DemoController">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Registros
+        </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <table ng-table="tableParams" class="table table-striped table-hover">
+                                <tr ng-repeat="row in $data">
+                                    <td data-title="'id'">{{row._id}}</td>
+                                    <td data-title="'Name'">{{row.idEstudiante.name}}</td>
+                                    <td data-title="'Curso'">{{row.idCurso.name}}</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+   </div>

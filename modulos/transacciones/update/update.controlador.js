@@ -9,6 +9,7 @@ app.controller('TransaccionUpdateController',
 
 
             $scope.actu = function () {
+
                 console.log("Transaccion:"+JSON.stringify($scope.transaccion));
                 console.log("_id:" +$scope.transaccion._id);
 
@@ -20,8 +21,9 @@ app.controller('TransaccionUpdateController',
                     console.log("error transaction update:" + JSON.stringify(response));
                 };
 
-                TransaccionUpdateResource.update($scope.transaccion, successCallback, errorCallback);
+                TransaccionUpdateResource.update($scope.transaccion,successCallback, errorCallback);
             };
+
 
         }]);
 
